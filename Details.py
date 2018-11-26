@@ -1,0 +1,5 @@
+Uname = input("Please enter your name: ")
+Age = input("Please enter your age: ")
+Hnum = input("Please enter your house number: ")
+Sname = input("Please enter your street name: ")
+print("Hi! My name is {}, I am {} years old and I live at {} number {}.".format(Uname, Age, Sname, Hnum))

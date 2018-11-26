@@ -1,0 +1,12 @@
+num1 = 99.23
+num2 = 23
+num3 = 150
+string1 = "100"
+numone = int(num1)
+numtwo = float(num2)
+numthree = str(num3)
+String1 = int(string1)
+print("{} = {}".format(num1, numone))
+print("{} = {}".format(num2, numtwo))
+print("{} = {}".format(num3, numthree))
+print("{} = {}".format(string1, String1))
