@@ -7,12 +7,26 @@
 # Print out the decimal value of the number.
 # Remember to make use of the built-in functions found in the math module as well as lists.
 
-bin2dec = int(input("Please enter your binary number to convert: \n"))
+binary = []
+desimal = []
+
+bin2dec = int(input("Please enter your decimal number to convert: \n"))
 quotient = int(bin2dec / 2)
+print(str(quotient))
 remainder = int(bin2dec % 2)
-print(remainder)
+print(str(remainder))
+binary.append(remainder)
+print(str(binary))
 for num in range(quotient):
-    while quotient != 0:
+    while quotient != 1:
         quotient = int(quotient / 2)
+        print(str(quotient))
         remainder = int(quotient % 2)
-        print(remainder)
+        print(str(remainder))
+        binary.append(remainder)
+        print(str(binary))
+
+binary = binary[::-1]
+binary.append(quotient)
+print(quotient)
+print(str(binary))
