@@ -2,7 +2,7 @@
 # Create your own function that prints all the days of the week
 # Create your own function that takes in a sentence and replaces every second word with the word “Hello”
 
-U_day = input("Pick a number between 1 and 7, q to quit: ")
+U_day = input("Pick a number between 1 and 7 to view the day of the week, q to quit: \n")
 
 
 def day_name(U_day):
