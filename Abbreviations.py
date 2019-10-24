@@ -9,12 +9,13 @@
 # If it is print out the abbreviation and it's meaning.
 # If it is not in the dictionary, print out "Abbreviation not found"
 
-abbreviations = {"asap": "as soon as possible",
-                 "acrim": "active cavity radiometer irradiance monitor",
-                 "acs": "advanced camera for surveys",
-                 "adsl": "asymmetric digital subscriber line",
-                 "acts": "advanced communications technology satellite",
-                 }
+abbreviations = {
+    "asap": "as soon as possible",
+    "acrim": "active cavity radiometer irradiance monitor",
+    "acs": "advanced camera for surveys",
+    "adsl": "asymmetric digital subscriber line",
+    "acts": "advanced communications technology satellite",
+}
 
 print(abbreviations.keys())
 u_abb = input("Enter an abbreviation: ")

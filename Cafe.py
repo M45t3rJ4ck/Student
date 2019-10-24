@@ -19,13 +19,13 @@ def order(fb_menu, stock, price):
 
 stock = {"packets" : 100, "bags" : 100, "ham_cheese" : 100, "ice_cream" : 100}
 
-fb_menu = {"coffee": 18, "tea": 15, "sandwich": 25, "waffle": 22}
+fb_menu = {"coffee" : 18, "tea" : 15, "sandwich" : 25, "waffle" : 22}
 
 
 def new_table(order, filename):
     in_table = open(filename, "w")
     for i in order.keys():
-        in_table.write(i + " , " + orders[i] + "\n")
+        in_table.write(i + " , " + order[i] + "\n")
     in_table.close()
 
 
