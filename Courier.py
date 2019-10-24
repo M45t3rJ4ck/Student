@@ -34,25 +34,24 @@ if urgency == "Y":
 User_dist = float(input("Please enter the total distance in kilometers: \n"))
 #Calculate travel cost
 if User_trav == True:
-                Travel = float(Air * User_dist)
+    Travel = float(Air * User_dist)
 else:
-                Travel = float(Freight * User_dist)
+    Travel = float(Freight * User_dist)
 #Calculate insurance cost
 if User_sec == True:
-                  Insurance = Full_ins
+    Insurance = Full_ins
 else:
-
-                  Insurance = Lim_ins
+    Insurance = Lim_ins
 #Calculate gift
 if User_int == True:
-                  Gift = A_gift
+    Gift = A_gift
 else:
-                  Gift = N_gift
+    Gift = N_gift
 #Calculate importance
 if User_vip == True:
-                  Importance = Priority
+    Importance = Priority
 else:
-                  Importance = Standard
+    Importance = Standard
 #Calculate final cost to user
 Userf_cost = (Travel + Insurance + Gift + Importance)
 #Output Operations
