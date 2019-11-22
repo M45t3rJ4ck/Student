@@ -151,23 +151,3 @@ from functools import reduce
 # Sum the items in the list with reduce
 
 print("Total Items {}".format(reduce((lambda x, y: x + y), matches)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
