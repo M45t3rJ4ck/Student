@@ -1,4 +1,3 @@
-# ================= BONUS Optional Task ==================
 # Create a new Python file in this folder called “Optional_task.py”
 # Create a text file called "numbers1.txt" that contains Integers which are sorted from smallest to largest.
 # Create another text file called "numbers2.txt" which also contains Integers that are sorted from smallest to largest.
@@ -7,17 +6,20 @@
 
 file1 = open("numbers1.txt", "r+")
 file2 = open("numbers2.txt", "r+")
-file3 = open("allNumbers.txt", "r+")
+file3 = open("allNumbers.txt", "w+")
+
 anum = []
-while True:
-    line = file1.read
-    anum.append(line)
-    line = file2.read
-    anum.append(line)
-    if not line:
-        break
-    print(anum)
-print("Operation completed")
+
+line1 = file1.read().strip(".")
+anum.append(line1.split(","))
+
+line2 = file2.read().strip(".")
+anum.append(line2.split(","))
+
+anum = anum[1] + anum[0]
+
+file3.write(str(anum))
+
 file1.close()
 file2.close()
 file3.close()
