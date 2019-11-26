@@ -1,8 +1,18 @@
+import nltk
+nltk.download('inaugural')
+nltk.download('gutenberg')
+nltk.download('genesis')
+nltk.download('nps_chat')
+nltk.download('webtext')
+nltk.download('treebank')
+nltk.download('punkt')
+
 # =======Part 1: Working with the NLTK ===== #
 from nltk.corpus import inaugural
 print("\nPart 1:")
 print(inaugural.words('2009-Obama.txt')[0:26])
 print("End Part 1\n")
+
 # ===  Part 2: Analysing tokens (words) of a text ===#
 from nltk.book import *
 print("\nPart 2:")
@@ -14,6 +24,7 @@ print("Amount of unique words of text 1: \n" + str(len(set(text1))))
 print("The lexical richness of a text 1: \n" + str(len(text1) / len(set(text1))))
 print("The lexical richness of a text 6: \n" + str(len(text6) / len(set(text6))))
 print("End Part 2\n")
+
 # === Part 3: Analysing frequency of words ===#
 from nltk import FreqDist
 print("\nPart 3:")
@@ -22,6 +33,7 @@ print("Amount of times 'the' appears in text 1: \n" + str(fd['the']))
 print(fd.keys())
 print(fd.items())
 print("End Part 3\n")
+
 # === Part 4: Your task ===#
 print("\nPart 4:")
 # 1.) Returns the 10 most frequent words in Obama's 2009 inaugural speech, including their frequencies
@@ -39,7 +51,6 @@ print("\nOptional Part\n")
 # Obama's 2009 speech and see how the average length of sentences has changed over the time of the entire US's history. Remember that
 # inaugural.fileids() will give you a list of all the String names of the speeches so you don't need to work out each name of each speech.
 def sent_length():
-
     text_file = str(input("Enter the name of a text file : \n"))
     txt_fl = inaugural.sents(text_file)
     print(len(txt_fl))
