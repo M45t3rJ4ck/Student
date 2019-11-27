@@ -32,7 +32,6 @@ def mutate():
 
 def translate(dna):
     dna = list(dna.upper())
-    print(dna)
     slc = ""
     while len(dna) != 0:
         if len(dna) >= 3:
