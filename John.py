@@ -10,9 +10,13 @@
 #       Incorrect names: [‘Tim’, ‘Mark’]
 
 name = "John"
+
 names = []
+
 In_name = str(input("Please enter a name: "))
+
 names.append(In_name)
+
 while In_name != name:
     In_name = str(input("Please enter a name: "))
     names.append(In_name)

@@ -9,7 +9,14 @@
 #    }
 #    What does print countryMap['Sweden'] return?
 
-country_map = {"united_kingdom" : "london", "sweden" : "stockholm", "canada" : "ottawa", "south_africa" : "johannesburg", "russia" : "moscow", "america" : "washington"}
+country_map = {
+    "united_kingdom" : "london",
+    "sweden" : "stockholm",
+    "canada" : "ottawa",
+    "south_africa" : "johannesburg",
+    "russia" : "moscow",
+    "america" : "washington"
+}
 for country in country_map.keys():
     print(country_map.keys())
     country = input("Enter a country's name: \n")

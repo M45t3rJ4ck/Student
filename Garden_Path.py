@@ -3,6 +3,9 @@
 # 	In the file type the following code:
 import nltk
 
+nltk.download('averaged_perceptron_tagger')
+nltk.download('tagsets')
+
 sentence = "I made her duck"
 tokens = nltk.word_tokenize(sentence)
 print(nltk.pos_tag(tokens))
@@ -22,12 +25,14 @@ print(nltk.help.upenn_tagset('VBP'))
 #   sentences and look up the POS tags you don't understand by using the nltk.help.upenn_tag set command. At the bottom
 #   of your file, write a comment about one unusual tag you found that NLTK gave one of the words of your sentences -
 #   did you expect this?
-garden_path = ["Until the police arrest the drug dealers control the street.",
-               "The prime number few.",
-               "The man who hunts ducks out on weekends.",
-               "The cotton clothing is usually made of grows in Mississippi.",
-               "That Jill is never here hurts.",
-               "We painted the wall with cracks."]
+garden_path = [
+    "Until the police arrest the drug dealers control the street.",
+    "The prime number few.",
+    "The man who hunts ducks out on weekends.",
+    "The cotton clothing is usually made of grows in Mississippi.",
+    "That Jill is never here hurts.",
+    "We painted the wall with cracks."
+]
 for sentence in garden_path:
     list_words = sentence.split()
     tokens = nltk.word_tokenize(sentence)

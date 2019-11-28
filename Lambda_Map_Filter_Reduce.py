@@ -1,12 +1,9 @@
-# ---------- ADVANCED FUNCTIONS ----------
-
-# ---------- FUNCTIONS AS OBJECTS ----------
-
+num = int(input("Enter a number: "))
 
 def mult_by_2(num):
     return num * 2
 
-
+print(f"{num} * 2 = {mult_by_2(num)}")
 # A function can be
 # 1. Assigned to another name
 times_two = mult_by_2
@@ -109,9 +106,11 @@ can_vote = lambda age: True if age >= 18 else False
 print("Can Vote :", can_vote(16))
 
 # Create a list of functions
-powerList = [lambda x: x ** 2,
-             lambda x: x ** 3,
-             lambda x: x ** 4]
+powerList = [
+    lambda x: x ** 2,
+    lambda x: x ** 3,
+    lambda x: x ** 4
+]
 
 # Run each function on a value
 for func in powerList:
@@ -120,9 +119,11 @@ for func in powerList:
 
 # You can also store lambdas in dictionaires
 
-attack = {'quick': (lambda: print("Quick Attack")),
-          'power': (lambda: print("Power Attack")),
-          'miss': (lambda: print("The Attack Missed"))}
+attack = {
+    'quick': (lambda: print("Quick Attack")),
+    'power': (lambda: print("Power Attack")),
+    'miss': (lambda: print("The Attack Missed"))
+}
 
 attack['quick']()
 

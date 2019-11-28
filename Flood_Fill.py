@@ -1,7 +1,6 @@
-# Bonus Challenge
-# The flood fill algorithm is commonly used in image processing such as Microsoft Paint. Two good examples are shown
-# in the attached images. Write a recursive program to do this (button, text or numbers, unless you want to work with
-# real images) Example:
+# The flood fill algorithm is commonly used in image processing such as Microsoft Paint.
+#  Two good examples are shown in the attached images.
+# Write a recursive program to do this (button, text or numbers, unless you want to work with real images) Example:
 # Original grid
 # [0, 1, 0]
 # [0, 1, 1]

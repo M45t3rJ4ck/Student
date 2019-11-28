@@ -1,5 +1,6 @@
-# When we create a class we can inherit all of the fields and methods from another class. This is called inheritance.
-#  The class that inherits is called the subclass and the class we inherit from is the super class
+# When we create a class we can inherit all of the fields and methods from another class.
+# This is called inheritance.
+# The class that inherits is called the subclass and the class we inherit from is the super class
 # This will be our super class
 
 
@@ -65,7 +66,7 @@ class Mammal(Animal):
     # Overwrite __str__
     # You can use super() to refer to the superclass
     def __str__(self):
-        return super().__str__() + " and it is {} they nurse their young".format(self.nurseYoung)
+        return super().__str__() + f" and it is {self.nurseYoung} they nurse their young"
 
 
 class Reptile(Animal):
