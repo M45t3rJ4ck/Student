@@ -11,8 +11,8 @@
 import random
 
 sampStr = iter("Sample")
-print("Char :", next(sampStr))
-print("Char :", next(sampStr))
+print("Char: ", next(sampStr))
+print("Char: ", next(sampStr))
 
 
 # You can add iterator behavior to your classes
@@ -68,7 +68,7 @@ class FibGenerator:
 
 fibSeq = FibGenerator()
 for i in range(10):
-    print("Fib :", next(fibSeq))
+    print("Fib: ", next(fibSeq))
 
 # ---------- LIST COMPREHENSIONS ----------
 # A list comprehension executes an expression against an iterable
@@ -111,9 +111,11 @@ print([x for x in [random.randint(1, 1001) for i in range(50)] if x % 9 == 0])
 # List comprehensions also make it easy to work with
 # multidimensional lists
 
-multiList = [[1, 2, 3],
-             [4, 5, 6],
-             [7, 8, 9]]
+multiList = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
 print([col[1] for col in multiList])
 
@@ -158,9 +160,9 @@ def gen_primes(max_number):
 prime = gen_primes(50)
 
 # Call next for each result
-print("Prime :", next(prime))
-print("Prime :", next(prime))
-print("Prime :", next(prime))
+print("Prime: ", next(prime))
+print("Prime: ", next(prime))
+print("Prime: ", next(prime))
 
 # ---------- GENERATOR EXPRESSIONS ----------
 # Generator expressions look just like list comprehensions
@@ -169,8 +171,8 @@ print("Prime :", next(prime))
 
 double = (x * 2 for x in range(10))
 
-print("Double :", next(double))
-print("Double :", next(double))
+print("Double: ", next(double))
+print("Double: ", next(double))
 
 # You can iterate through all results as well
 for num in double:

@@ -7,12 +7,12 @@
 #        This command allows you to loop over a list retaining both the item at every position, and its index (i.e. position in the list).
 
 movie = []
+
 movies = list(movie)
+
 movie_count = 0
-movie = input("Please enter a movie title: ")
-movies.append(movie)
-movie_count += 1
-while movie_count != 5:
+
+for movie_count in range(5):
     movie = input("Please enter a movie title: ")
     movies.append(movie)
     movie_count += 1
