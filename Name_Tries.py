@@ -3,12 +3,17 @@
 # If the user exceeds the number of tries, the program must stop. 
 
 name = "John"
+
 names = []
 tries = 0
+
 In_try = int(input("Please enter a number: "))
 In_name = str(input("Please enter a name: "))
+
 names.append(In_name)
+
 tries += 1
+
 while In_name != name:
     In_name = str(input("Please enter a name: "))
     names.append(In_name)

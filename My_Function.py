@@ -29,7 +29,7 @@ elif U_day == "q":
 
 
 sentence = str(input("Please enter a sentence: \n"))
-               
+
 lst = []
 for idx, word in enumerate(sentence.split()):
     if idx % 2 == 0:

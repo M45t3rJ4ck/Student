@@ -1,18 +1,23 @@
 # Defining containers
-Names = []
+names = []
+
 name = str("hyper")
-sum_names = sum(Names)
+
+sum_names = sum(names)
 uname_count = 0
 
 # Collecting user input
-U_name = input("Please enter a name: \n")
-Names.append(U_name)
+uname = input("Please enter a name: \n")
+
+names.append(uname)
+
 uname_count += 1
-while U_name != name:
-    U_name = input("Please enter a name: \n")
-    Names.append(U_name)
+
+while uname != name:
+    uname = input("Please enter a name: \n")
+    names.append(uname)
     uname_count += 1
-    if U_name == name:
-        print(len(Names))
+    if uname == name:
+        print(len(names))
     elif uname_count == 10:
         exit()

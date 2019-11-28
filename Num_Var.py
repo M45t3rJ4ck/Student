@@ -1,4 +1,5 @@
 numVar = int(input("Please enter a number: "))
+
 if numVar != 10:
         for i in range(numVar):
                 if numVar >= 11:
