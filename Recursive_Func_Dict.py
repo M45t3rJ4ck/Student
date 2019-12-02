@@ -44,7 +44,7 @@ namedict.clear()
 employees = []
 
 # Input employee data
-fname, lname = input("Enter employee name: ").split()
+fname, lname = input("Enter employee name and surname: ").split()
 employees.append({"fname": fname, "lname": lname})
 print(employees)
 

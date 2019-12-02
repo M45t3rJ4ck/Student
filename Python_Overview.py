@@ -104,11 +104,13 @@ new_list = tuple(grocery_list)
 # DICTIONARY or MAP -------------
 # Made up of values with a unique key for each value
 # Similar to lists, but you can't join dicts with a +
-super_villains = {'Fiddler': 'Isaac Bowin',
-                  'Captain Cold': 'Leonard Snart',
-                  'Weather Wizard': 'Mark Mardon',
-                  'Mirror Master': 'Sam Scudder',
-                  'Pied Piper': 'Thomas Peterson'}
+super_villains = {
+    'Fiddler': 'Isaac Bowin',
+    'Captain Cold': 'Leonard Snart',
+    'Weather Wizard': 'Mark Mardon',
+    'Mirror Master': 'Sam Scudder',
+    'Pied Piper': 'Thomas Peterson'
+}
 print(super_villains['Captain Cold'])
 # Delete an entry
 del super_villains['Fiddler']

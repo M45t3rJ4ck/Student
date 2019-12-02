@@ -8,12 +8,16 @@
 
 
 Indnum = int(input("How many students are registering: \n"))
+
 Fname = ()
 Lname = ()
 IDnum = ()
 Ssign = ("Sign:_________")
+
 studnum = 0
+
 file = open("RegForm.txt", "w")
+
 for num in range(Indnum):
     if studnum < Indnum:
         Fname, Lname = input("Please enter your name and surname: \n").split()
@@ -23,4 +27,5 @@ for num in range(Indnum):
         studnum += 1
     elif studnum == Indnum:
         print("\nRegistration completed")
+
 file.close()

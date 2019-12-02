@@ -1,6 +1,8 @@
 numStr = str(input("Please enter your favourite number: "))
+
 numInt1 = str("3")
 numInt2 = str("2")
+
 if numStr in numInt1:
     print("You're in luck...it was 3!")
 elif numStr in numInt2:

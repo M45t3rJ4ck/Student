@@ -44,9 +44,13 @@ def divNum(num1, num2, num3):
 
 num1 = float(input("Enter 1st number for calculations: \n"))
 num2 = float(input("Enter 2nd number for calculations: \n"))
+
 num3 = float()
+
 print_menu()
+
 menu_choice = 0
+
 while menu_choice != 5:
     menu_choice = int(input("Please enter a number between 1 and 5: \n"))
     if menu_choice == 1:

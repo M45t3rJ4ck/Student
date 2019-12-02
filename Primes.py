@@ -10,7 +10,9 @@
 # If the number is not a prime number, print out the number and ' is not a prime number'
 
 U_prime = int(input("Please enter a number to check if it is prime: "))
+
 primed = ()
+
 for x in range(2, U_prime):
     if (x % 2) == 0:
         primed = str(U_prime) + " isn't a prime number." + "\n"
@@ -18,4 +20,3 @@ for x in range(2, U_prime):
         primed = str(U_prime) + " is a prime number." + "\n"
 
 print(primed)
-input("Press enter to exit")

@@ -1,4 +1,3 @@
-# ---------- LEARN TO PROGRAM 9 ----------
 # Real world objects have attributes and capabilities
 # A dog for example has the attributes of height, weight
 # favorite food, etc.
@@ -162,12 +161,16 @@ class Battle:
     @staticmethod
     def get_attack_result(warrior_a, warrior_b):
         warrior_a_attk_amt = warrior_a.attack()
+        warrior_a_block_amt = warrior_a.block()
+        warrior_b_attk_amt = warrior_b.attack()
         warrior_b_block_amt = warrior_b.block()
+        damage2_warrior_a = math.ceil(warrior_b_attk_amt - warrior_a_block_amt)
         damage2_warrior_b = math.ceil(warrior_a_attk_amt - warrior_b_block_amt)
+        warrior_a.health = warrior_a.health- damage2_warrior_a
         warrior_b.health = warrior_b.health - damage2_warrior_b
         print("{} attacks {} and deals {} damage".format(warrior_a.name, warrior_b.name, damage2_warrior_b))
         print("{} is down to {} health".format(warrior_b.name, warrior_b.health))
-        if warrior_b.health <= 0:
+        if warrior_b.health == 0:
             print("{} has Died and {} is Victorious".format(warrior_b.name, warrior_a.name))
             return "Game Over"
         else:

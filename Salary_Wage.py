@@ -9,7 +9,9 @@ Saleson = False
 
 # Collecting user input
 User_ID = input("Are you employed as Management?(Y or N) \n")
+
 User_ID = User_ID.upper()
+
 if User_ID == "Y":
     Hours = int(input("How many hours have you worked this month? \n"))
     Manager = True

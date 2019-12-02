@@ -7,7 +7,9 @@
 # If it is not a palindrome, print out 'Your word is not a palindrome'.
 
 U_palin = list(input("Please enter your word for evaluation: \n"))
+
 palin_U = U_palin[::-1]
+
 if U_palin == palin_U:
     print("You're word is a palindrome!")
 else:

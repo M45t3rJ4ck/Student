@@ -14,4 +14,5 @@ for x in range(1, 10):
     print(end = "\n")
     for y in range(1, x + 1):
         print(x * y, end="\t")
+
 print(end="\t")

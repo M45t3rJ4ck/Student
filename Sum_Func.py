@@ -7,11 +7,10 @@
 
 n = int(input("Please enter a number for range max limit: \n"))
 
-
 def sum_all(n):
+    nums = 0
     for i in range(1, n + 1):
-        nums = i
+        nums += i
         print(nums)
 
-
-print(sum_all(n))
+sum_all(n)

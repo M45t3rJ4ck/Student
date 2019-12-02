@@ -7,7 +7,7 @@ side2 = float(side2)
 side3 = float(side3)
 
 # Define Operations:
-Sides = (side1 + side2 + side3) / 2
+sides = (side1 + side2 + side3) / 2
 
 # Print Operations:
-print("{:.2f}".format(Sides))
+print("{:.2f}".format(sides))
