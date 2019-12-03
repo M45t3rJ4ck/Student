@@ -5,7 +5,7 @@ print(number)
 # User can only enter a number
 while True:
     try:
-        number = int(input("please enter a number:"))
+        number = int(input("Please enter a number:"))
         break
     except ValueError:
         print("You didn't enter a number!")
@@ -115,7 +115,7 @@ print("66 = ", chr(66))
 
 # PROBLEM - THE SECRET STRING:
 # Receive uppercase string and hide meaning in Unicode
-norm_string = input("In uppercase, enter a sentence: ")
+norm_string = input("In all uppercase, enter a sentence: ")
 secret_string = ""
 for char in norm_string:
     secret_string += str(ord(char))
@@ -125,19 +125,29 @@ norm_string = ""
 for i in range(0, len(secret_string) - 1, 2):
     char_code = secret_string[i] + secret_string[i + 1]
     norm_string += chr(int(char_code))
-print("Original Message was: ",norm_string)
+print("Original Message was: ", norm_string)
 
 # SUPER PROBLEM:
 # Make it work with upper- and lower-case
-# norm_string = input("In uppercase, enter a sentence: ")
-norm_string = input("Enter a sentence: ")
-secret_string = ""
-for char in norm_string:
-    secret_string += str(ord(char) - 23)
-print("Secret Message is: ", secret_string)
+user_string = input("In camelcase, enter a sentence: ")
+special_string = ""
+for letter in user_string:
+    if letter == " ":
+        special_string += str(ord(letter))
+        continue
+    else:
+        special_string += str(ord(letter) - 23)
+        continue
+print("Secret Message is: ", special_string)
 # Then translate back into original meaning
-norm_string = ""
-for i in range(0, len(secret_string) - 1, 2):
-    char_code = secret_string[i] + secret_string[i + 1]
-    norm_string += chr(int(char_code) + 23)
-print("Original Message was: ",norm_string)
+original_string = ""
+for i in range(0, len(special_string) - 1, 2):
+    if special_string[i] + special_string[i + 1] == "32":
+        original_string += chr(32)
+        continue
+    else:
+        letter_code = special_string[i] + special_string[i + 1]
+        original_string += chr(int(letter_code) + 23)
+        continue
+
+print("Original Message was: ", original_string)

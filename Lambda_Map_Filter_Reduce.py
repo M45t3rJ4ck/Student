@@ -73,7 +73,7 @@ print(change_list(aList, is_it_odd))
 # It is possible to define the data types of attributes and the returned value with annotations, but they have no
 # impact on how the function operates, but instead are for documentation.
 
-def random_func(name: str, age: int, weight: float) -> str:
+def random_func(name: str, age: int, weight: float):
 
     print("Name :", name)
     print("Age :", age)
