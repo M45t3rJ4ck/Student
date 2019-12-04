@@ -15,7 +15,7 @@ def time_format(timestampMs):
     return other_format
 
 
-print("A programme to convert JSON into KLM >>>>>")
+print("A programme to convert JSON into KLM")
 print("")
 print("Input file: LocationHistory.json")
 print("")
@@ -30,7 +30,7 @@ for item in items:
     file.write("<Placemark> \n")
     file.write("<TimeStamp><when>" + time_format(int(item["timestampMs"])) + "</when></TimeStamp> \n")
     file.write("<ExtendedData> \n")
-    file.write("<Data name='accuracy'> \n")
+    file.write("<Data name ='accuracy'> \n")
     file.write("<value>" + str(item["accuracy"]) + "</value> \n")
     file.write("</Data> \n")
     file.write("</ExtendedData> \n")
